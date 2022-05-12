@@ -42,7 +42,7 @@ body{
     background-color: var(--color-neutral-verydarkblue-bg-main);
 }
 
-body p{font-size: 18px;}
+body p{font-size: 15px;}
 
 img{
     max-width: 100%;
@@ -59,11 +59,14 @@ img{
 
     padding: 1rem;
     border-radius: 15px;
+    box-shadow: 0 1.5em 4px 15px rgba(0, 0, 0,10%) ;
 
     background-color: var(--color-neutral-verydarkblue-bg-card);
 }
 
-.card__preview{}
+.card__preview img{
+    border-radius: 10px;
+}
 
 .card__info{
     
@@ -76,37 +79,53 @@ img{
     margin: 1em 0;
     color: var(--color-primary-softblue);
     text-align: left;
+    
 }
 
 .card__stats{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 1rem;
 }
 
 .card__stats__value{
     display: flex;
+    width: 100%;
 }
 .card__stats__value img{
-    margin-right: .5rem;
+    margin-right: .4rem;
 }
 .card__stats__value p{
     color: var(--color-primary-cyan);
+    flex-grow: 0;
 }
 
 
 .card__stats__time{
     display: flex;
-    flex-direction: row;
+    width: 100%;
+    justify-content:right;
+    
 }
 .card__stats__time img{
-    margin-right: .5rem;
+    margin-right: .4rem;
 }
 .card__stats__time p{
     color: var(--color-primary-softblue);
 }
 
-.card__author{display: flex;}
+
+.card__line{
+
+    border: 1px solid var(--color-neutral-verydarkblue-line)
+    
+
+}
+
+
+.card__author{
+    display: flex;
+    align-items: center;
+}
 .card__author img{
     max-width: 2rem;
     margin-right: 1em;

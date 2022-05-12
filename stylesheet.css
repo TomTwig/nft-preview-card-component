@@ -175,7 +175,7 @@ img{
 .card__creator img{
     max-width: 2rem;
     margin-right: 1em;
-    border: 2px solid white;
+    border: 1px solid white;
     border-radius: 50%;
 }
 

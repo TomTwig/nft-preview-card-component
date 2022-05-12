@@ -1,0 +1,131 @@
+
+:root{
+
+    --color-primary-softblue: hsl(215, 51%, 70%);
+    --color-primary-cyan: hsl(178, 100%, 50%);
+
+    --color-neutral-verydarkblue-bg-main: hsl(217, 54%, 11%);
+    --color-neutral-verydarkblue-bg-card: hsl(216, 50%, 16%);
+    --color-neutral-verydarkblue-line: hsl(215, 32%, 27%);
+
+    --color-white:hsl(0, 0%, 100%);
+
+
+}
+
+.primary-softblue{
+    color: var(--color-primary-softblue);
+}
+
+.primary-cyan{
+    color: var(--color-primary-cyan);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+   
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 100vh;
+    gap: 1em;
+
+    font-family: Outfit;
+    background-color: var(--color-neutral-verydarkblue-bg-main);
+}
+
+body p{font-size: 18px;}
+
+img{
+    max-width: 100%;
+}
+
+.container{
+    max-width: 300px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+    padding: 1rem;
+    border-radius: 15px;
+
+    background-color: var(--color-neutral-verydarkblue-bg-card);
+}
+
+.card__preview{}
+
+.card__info{
+    
+}
+.card__info h1{
+    color: var(--color-white);
+    font-size: 1.2em;
+}
+.card__info p{
+    margin: 1em 0;
+    color: var(--color-primary-softblue);
+    text-align: left;
+}
+
+.card__stats{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.card__stats__value{
+    display: flex;
+}
+.card__stats__value img{
+    margin-right: .5rem;
+}
+.card__stats__value p{
+    color: var(--color-primary-cyan);
+}
+
+
+.card__stats__time{
+    display: flex;
+    flex-direction: row;
+}
+.card__stats__time img{
+    margin-right: .5rem;
+}
+.card__stats__time p{
+    color: var(--color-primary-softblue);
+}
+
+.card__author{display: flex;}
+.card__author img{
+    max-width: 2rem;
+    margin-right: 1em;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+.card__author p{
+    color: var(--color-white);
+}
+.card__author em{
+    color: var(--color-primary-softblue);
+}
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+@media only screen and (max-width: 600px) {
+  
+  }
